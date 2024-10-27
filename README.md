@@ -4,7 +4,7 @@
 
 ## 👨‍💻 Sobre Mim
 
-Olá! Sou João Victor, um desenvolvedor web apaixonado por criar soluções inovadoras e funcionais. Com experiência em várias tecnologias web e mobile, estou sempre buscando aprender e me aprimorar.
+Olá! Sou um desenvolvedor apaixonado por criar soluções inovadoras e funcionais. Com experiência na criação de aplicações web e mobile, estou sempre buscando aprender e me aprimorar.
 
 ### 🛠️ Habilidades Técnicas
 
