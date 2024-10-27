@@ -1,0 +1,189 @@
+:root {
+    --primary-color: #00ff00; /* Verde Matrix */
+    --secondary-color: #008000; /* Verde escuro */
+    --accent-color: #00ffff; /* Ciano */
+    --text-color: #cccccc; /* Cinza claro */
+    --background-color: rgba(0, 10, 0, 0.8); /* Verde muito escuro semi-transparente */
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    background: black;
+    color: var(--text-color);
+    font-family: 'Courier New', monospace;
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    background: var(--background-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding: 20px 0;
+}
+
+header h1, header p {
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+.nav-link {
+    color: var(--primary-color) !important;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+    text-shadow: 0 0 10px var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+.card {
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-color);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px var(--accent-color);
+}
+
+.card-title {
+    color: var(--accent-color);
+}
+
+.card-text {
+    color: var(--text-color);
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--accent-color);
+    color: black;
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+.form-control {
+    background-color: rgba(0, 20, 0, 0.5);
+    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+}
+
+.form-control:focus {
+    background-color: rgba(0, 30, 0, 0.7);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 255, 0, 0.25);
+}
+
+footer {
+    background-color: var(--background-color);
+    border-top: 2px solid var(--primary-color);
+    padding: 20px 0;
+    text-align: center; /* Centraliza o texto */
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+footer p {
+    margin-bottom: 10px; /* Adiciona um pequeno espaço entre o texto e os ícones */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    color: var(--primary-color);
+    margin: 0 10px; /* Adiciona espaço entre os ícones */
+}
+
+.social-icons a:hover {
+    color: var(--accent-color) !important;
+    text-shadow: 0 0 10px var(--accent-color);
+}
+
+.container, .bg-dark {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+p, li {
+    text-shadow: 0 0 5px var(--primary-color);
+}
+
+#sobre ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sobre ul li {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+#sobre img {
+    max-width: 200px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center 10%; /* Ajuste este valor conforme necessário */
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 15px var(--primary-color);
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+#sobre .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 15px var(--primary-color);
+}

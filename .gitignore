@@ -1,0 +1,43 @@
+# Arquivos e pastas do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de ambiente
+.env
+.venv
+
+# Dependências
+/node_modules
+/venv
+
+# Arquivos de build
+/build
+/dist
+
+# Arquivos de log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos de IDE e editores
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Arquivos de cache
+.cache/
+.pytest_cache/
+__pycache__/
+
+# Outros
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Arquivos específicos do seu projeto (adicione conforme necessário)
+# exemplo: config.json

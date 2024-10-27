@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container text-center">
+            <h1 class="display-4">Meu Portfólio</h1>
+            <p class="lead">Desenvolvedor Web e Mobile</p>
+            <nav class="mt-4">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-light" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#sobre">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <section id="projetos" class="mb-5">
+            <h2 class="text-center mb-4">Projetos</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="img/xmltoexcel.webp" class="card-img-top" alt="XML to Excel - Notas Fiscais">
+                        <div class="card-body">
+                            <h5 class="card-title">XML to Excel - Notas Fiscais</h5>
+                            <p class="card-text">Ferramenta para ler notas fiscais em formato XML e transferir as informações necessárias para uma planilha Excel. Automatiza o processo de extração de dados de notas fiscais.</p>
+                            <a href="https://github.com/SondTheAnime/XML-to-Excel---Notas-Fiscais" class="btn btn-primary">Ver no GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="img/ifpa.png" class="card-img-top" alt="DocEstágio">
+                        <div class="card-body">
+                            <h5 class="card-title">DocEstágio</h5>
+                            <p class="card-text">Aplicação web para automatizar a geração de documentos de estágio do IFPA. Simplifica o processo, reduz erros e garante padronização na criação de PDFs personalizados para estagiários.</p>
+                            <p class="card-text"><strong>Nota:</strong> O repositório deste projeto é privado.</p>
+                            <a href="#" class="btn btn-secondary disabled">Repositório Privado</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="mb-5">
+            <h2 class="text-center mb-4">Sobre Mim</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="img/joao.jpeg" alt="Foto de João" class="img-fluid mb-3">
+                </div>
+                <div class="col-md-8">
+                    <p>Olá! Sou um desenvolvedor web apaixonado por criar soluções inovadoras e funcionais. Com experiência em várias tecnologias web e mobile, estou sempre buscando aprender e me aprimorar.</p>
+                    <p>Minhas habilidades incluem:</p>
+                    <ul>
+                        <li>HTML5, CSS3, JavaScript</li>
+                        <li>React, React Native</li>
+                        <li>Node.js</li>
+                        <li>MySQL</li>
+                        <li>Python, Django</li>
+                        <li>LUA</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="mb-5">
+            <h2 class="text-center mb-4">Contato</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Seu email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="message" rows="5" placeholder="Sua mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 João Victor</p>
+            <div class="social-icons">
+                <a href="https://github.com/SondTheAnime" class="text-white mx-2"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sondtheanime/" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/coldthecold/" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
