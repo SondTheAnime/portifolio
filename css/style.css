@@ -17,25 +17,94 @@ body, html {
     z-index: 1;
 }
 
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
 header {
-    background: var(--background-color);
-    border-bottom: 2px solid var(--primary-color);
-    padding: 20px 0;
+    color: #fff;
+}
+
+/* Navegação */
+.nav-link {
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Projetos */
+.card {
+    height: 100%;
+    transition: transform 0.3s;
+    background-color: transparent; /* Torna o fundo do card transparente */
+    border: 1px solid var(--primary-color); /* Adiciona uma borda sutil */
+    box-shadow: 0 0 10px var(--primary-color); /* Adiciona um brilho suave */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px var(--accent-color); /* Aumenta o brilho ao passar o mouse */
+}
+
+/* Sobre Mim */
+#sobre img {
+    max-width: 200px;
+    border: 5px solid #343a40;
+}
+
+/* Contato */
+#contactForm {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    color: #fff;
+    padding: 1rem 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .nav-link {
+        padding: 0.25rem 0.5rem;
+    }
+
+    #sobre img {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
 }
 
 header h1, header p {
     text-shadow: 0 0 10px var(--primary-color);
-}
-
-.nav-link {
-    color: var(--primary-color) !important;
-    font-weight: bold;
-}
-
-.nav-link:hover {
-    color: var(--accent-color) !important;
-    text-shadow: 0 0 10px var(--accent-color);
-    transition: all 0.3s ease;
 }
 
 h2 {
@@ -45,20 +114,9 @@ h2 {
     text-shadow: 0 0 10px var(--primary-color);
 }
 
-.card {
-    background-color: var(--background-color);
-    border: 1px solid var(--primary-color);
-    transition: all 0.3s ease;
-    box-shadow: 0 0 10px var(--primary-color);
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px var(--accent-color);
-}
-
 .card-title {
     color: var(--accent-color);
+    text-shadow: 0 0 5px var(--accent-color);
 }
 
 .card-text {
@@ -88,13 +146,6 @@ h2 {
     background-color: rgba(0, 30, 0, 0.7);
     border-color: var(--accent-color);
     box-shadow: 0 0 0 0.2rem rgba(0, 255, 0, 0.25);
-}
-
-footer {
-    background-color: var(--background-color);
-    border-top: 2px solid var(--primary-color);
-    padding: 20px 0;
-    text-align: center; /* Centraliza o texto */
 }
 
 footer .container {
@@ -164,19 +215,6 @@ p, li {
     box-shadow: 0 0 5px var(--primary-color);
 }
 
-#sobre img {
-    max-width: 200px;
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    object-position: center 10%; /* Ajuste este valor conforme necessário */
-    border: 3px solid var(--primary-color);
-    box-shadow: 0 0 15px var(--primary-color);
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 20px;
-}
-
 #sobre .col-md-6 {
     display: flex;
     flex-direction: column;
@@ -186,4 +224,14 @@ p, li {
 img {
     border: 2px solid var(--primary-color);
     box-shadow: 0 0 15px var(--primary-color);
+}
+
+.card-body {
+    background-color: rgba(0, 20, 0, 0.5); /* Fundo semi-transparente escuro */
+    border-radius: 0 0 10px 10px; /* Arredonda as bordas inferiores */
+}
+
+.card-img-top {
+    border-bottom: 1px solid var(--primary-color);
+    border-radius: 10px 10px 0 0; /* Arredonda as bordas superiores */
 }
